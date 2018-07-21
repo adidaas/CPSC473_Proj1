@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="stylesheet/styles.css">
+  <link rel="BabyGram" href="BabyGram/index.html">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    body {
+      background-size: cover;
+      background-color: white;
+      /*background-image: url('stylesheet/camera-3000953_640.png');*/
+      background-image: url(../../img/BabyCollage2.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center center;
+      /*background-size: 90%;*/
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="main-title">
+    <h1 style="font-family: Calibri; font-size: 4em;">BabyGram</h1>
+    <i style="color:lightgrey;">"A baby is a wishing well. Everyone puts their hopes, their fears, their pasts, their two cents in."</i>
+    <hr>
+    </div>
+    <div class="start-btns">
+    <button class="button" onclick="modal"><i class="fa fa-list"></i> Browse</button>
+    <button class="button" onclick="document.getElementById('id03').style.display='block'"><i class="fa fa-upload"></i> Upload</button>
+    </div>
+  </div>
+
+  <!-- Modal Upload -->
+  <!-- ================================ -->
+  <div id="id03" class="w3-modal w3-animate-opacity">
+    <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">
+          Upload
+          <a type="button" onclick="document.getElementById('id03').style.display='none'" class="close">X</a>
+        </h4>
+      </div>
+      <div class="modal-body">
+        <p>Please choose a file to upload.</p>
+        <hr>
+        <br>
+        <form action="/action_page.php">
+          <input type="file" name="pic" accept="image/*">
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="submit"><i class="fa fa-check-square-o"></i> Submit</button>
+        <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn"><i class="fa fa-times-rectangle-o"></i> Cancel</button>
+      </div>
+
+      <div class="clearfix">
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="scripts/main.js" charset="utf-8"></script>
+  <footer>
+    <p>About Us | Support | Jobs | Terms | Language</p>
+    <p>&copy 2018 BabyGram</p></footer>
+</body>
+
+</html>
